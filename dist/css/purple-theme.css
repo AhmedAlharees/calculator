@@ -1,0 +1,52 @@
+/*
+This is the third-and last- theme of three themes
+preseneted in the challenge.I named it 
+purple theme.
+*/
+/* variables */
+body {
+  background-color: hsl(268, 75%, 9%);
+}
+
+main .header {
+  color: hsl(52, 100%, 62%);
+}
+main .header .themes-input {
+  background-color: hsl(268, 71%, 12%);
+}
+main .header .themes-input .purple-theme {
+  background-color: hsl(176, 100%, 44%);
+}
+main .display {
+  background-color: hsl(268, 71%, 12%);
+  color: hsl(52, 100%, 62%);
+}
+main .choices {
+  background-color: hsl(268, 71%, 12%);
+}
+main .choices button {
+  box-shadow: 0 5px hsl(285, 91%, 52%);
+}
+main .choices .number,
+main .choices .operand {
+  color: hsl(52, 100%, 62%);
+  background-color: hsl(281, 89%, 26%);
+}
+main .choices .delete-btn,
+main .choices .equal-btn,
+main .choices .reset-btn {
+  color: #fff;
+}
+main .choices .delete-btn {
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0 5px hsl(285, 91%, 52%);
+}
+main .choices .equal-btn {
+  color: black;
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0 5px hsl(177, 92%, 70%);
+}
+main .choices .reset-btn {
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0 5px hsl(285, 91%, 52%);
+}/*# sourceMappingURL=purple-theme.css.map */

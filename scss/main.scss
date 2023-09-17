@@ -1,0 +1,131 @@
+@use '_reset';
+
+
+body {
+  transition: 0.3s;
+  display: grid;
+  place-items: center;
+  font-family: 'League Spartan', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+  max-width: 450px;
+  min-width: 330px;
+
+  // header section
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // logo-header
+    &__logo {
+      font-size: 2.5rem;
+    }
+
+    // theme switcher
+    &__theme-switcher {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+
+      //  theme switcher title
+      .theme-switcher__title {
+        font-weight: 700;
+      }
+      // theme numbers
+      .theme-labels {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      // themes input
+      .themes-input {
+        border-radius: 20px;
+        padding: 0.2em 0.3em;
+        // inputs
+        input {
+          transition: 0.5s;
+          appearance: none;
+          position: relative;
+          top: 3px;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  // display
+  .display {
+    text-align: right;
+    background-color: lightblue;
+    padding: 2em;
+    border-radius: 20px;
+    margin-top: 10px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // display previouse result
+    &__previous-result {
+      position: relative;
+      margin-top: 10px;
+
+      // result text
+      .previous-result__text {
+        font-size: 1.3rem;
+        font-weight: 700;
+      }
+    }
+
+    // display current result
+    .display__current-result {
+      min-height: 60px;
+      // current result text
+      .current-result__text {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .choices {
+    background-color: lightblue;
+    display: grid;
+    padding: 0.9em;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    font-weight: 700;
+    gap: 10px;
+    transform: translateY(0);
+
+    button {
+      padding: 0.2em 0.5em;
+      font-size: 2rem;
+      border-radius: 10px;
+      border: none;
+      margin: 5px 0 0 0;
+    }
+
+    button:active {
+      transform: translateY(5px);
+    }
+
+    .reset-btn {
+      grid-column: 1/3;
+    }
+
+    .equal-btn {
+      grid-column: 3/5;
+    }
+  }
+}

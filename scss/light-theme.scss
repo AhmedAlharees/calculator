@@ -1,0 +1,80 @@
+/*
+This is the second theme of three themes
+preseneted in the challenge.I named it 
+the light theme
+*/
+
+/* variables */
+$body-bg-clr: hsl(0, 0%, 90%);
+$header-text-clr: hsl(60, 10%, 19%);
+$theme-switcher-bg-clr: hsl(0, 5%, 81%);
+$toggle-bg-clr: hsl(25, 98%, 40%);
+$display-bg-clr: #fff;
+$display-text-clr: hsl(60, 10%, 19%);
+$keypad-bg-clr: hsl(0, 5%, 81%);
+$number-operand-clr: hsl(60, 10%, 19%);
+$number-operand-bg-clr: hsl(30, 25%, 89%);
+$key-shadow: hsl(28, 16%, 65%);
+$action-btns: #fff;
+$delete-btn-bg-clr: hsl(185, 42%, 37%);
+$delete-btn-shadow: hsl(185, 58%, 25%);
+$equal-btn-bg-clr: hsl(25, 98%, 40%);
+$equal-btn-shadow: hsl(25, 99%, 27%);
+$reset-btn-bg-clr: hsl(185, 42%, 37%);
+$reset-btn-shadow: hsl(185, 58%, 25%);
+
+body {
+  background-color: $body-bg-clr;
+}
+
+main {
+  .header {
+    color: $header-text-clr;
+
+    // themes inputs
+    .themes-input {
+      background-color: $theme-switcher-bg-clr;
+
+      // inputs
+      .light-theme {
+        background-color: $toggle-bg-clr;
+      }
+    }
+  }
+
+  //   display section
+  .display {
+    background-color: $display-bg-clr;
+    color: $display-text-clr;
+  }
+
+  //   choices section
+  .choices {
+    background-color: $keypad-bg-clr;
+
+    button {
+      box-shadow: 0 5px $key-shadow;
+    }
+    .number, .operand {
+        color: $number-operand-clr;
+        background-color: $number-operand-bg-clr;
+    }
+
+    .delete-btn, .equal-btn, .reset-btn{
+        color: $action-btns;
+        // box-shadow: 0 5px black;
+    }
+    .delete-btn {
+        background-color: $delete-btn-bg-clr;
+        box-shadow: 0 5px $delete-btn-shadow;
+    }
+    .equal-btn {
+        background-color: $equal-btn-bg-clr;
+        box-shadow: 0 5px $equal-btn-shadow;
+    }
+    .reset-btn {
+        background-color: $reset-btn-bg-clr;
+        box-shadow: 0 5px $reset-btn-shadow;
+    }
+  }
+}

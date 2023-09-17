@@ -1,0 +1,49 @@
+/*
+This is the first theme of three themes
+preseneted in the challenge.I named it 
+the default theme, because this is what
+the users gonna see when they open the page
+*/
+/* variables */
+body {
+  background-color: hsl(222, 26%, 31%);
+}
+
+main .header {
+  color: hsl(0, 0%, 100%);
+}
+main .header .themes-input {
+  background-color: hsl(223, 31%, 20%);
+}
+main .header .themes-input .default-theme {
+  background-color: hsl(6, 63%, 50%);
+}
+main .display {
+  background-color: hsl(224, 36%, 15%);
+  color: #fff;
+}
+main .choices {
+  background-color: hsl(223, 31%, 20%);
+}
+main .choices button {
+  box-shadow: 0 5px hsl(28, 16%, 65%);
+}
+main .choices .number, main .choices .operand {
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+}
+main .choices .delete-btn, main .choices .equal-btn, main .choices .reset-btn {
+  color: #fff;
+}
+main .choices .delete-btn {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 5px hsl(224, 28%, 35%);
+}
+main .choices .equal-btn {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 5px hsl(6, 70%, 34%);
+}
+main .choices .reset-btn {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 5px hsl(224, 28%, 35%);
+}/*# sourceMappingURL=default-theme.css.map */

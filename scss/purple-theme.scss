@@ -1,0 +1,84 @@
+/*
+This is the third-and last- theme of three themes
+preseneted in the challenge.I named it 
+purple theme.
+*/
+
+/* variables */
+$body-bg-clr: hsl(268, 75%, 9%);
+$header-text-clr: hsl(52, 100%, 62%);
+$theme-switcher-bg-clr: hsl(268, 71%, 12%);
+$toggle-bg-clr: hsl(176, 100%, 44%);
+$display-bg-clr: hsl(268, 71%, 12%);
+$display-text-clr: hsl(52, 100%, 62%);
+$keypad-bg-clr: hsl(268, 71%, 12%);
+$number-operand-clr: hsl(52, 100%, 62%);
+$number-operand-bg-clr: hsl(281, 89%, 26%);
+$key-shadow: hsl(285, 91%, 52%);
+$action-btns: #fff;
+$delete-btn-bg-clr: hsl(268, 47%, 21%);
+$delete-btn-shadow: hsl(285, 91%, 52%);
+$equal-btn-bg-clr: hsl(176, 100%, 44%);
+$equal-btn-shadow: hsl(177, 92%, 70%);
+$reset-btn-bg-clr: hsl(268, 47%, 21%);
+$reset-btn-shadow: hsl(285, 91%, 52%);
+
+body {
+  background-color: $body-bg-clr;
+}
+
+main {
+  .header {
+    color: $header-text-clr;
+
+    // themes inputs
+    .themes-input {
+      background-color: $theme-switcher-bg-clr;
+
+      // inputs
+      .purple-theme {
+        background-color: $toggle-bg-clr;
+      }
+    }
+  }
+
+  //   display section
+  .display {
+    background-color: $display-bg-clr;
+    color: $display-text-clr;
+  }
+
+  //   choices section
+  .choices {
+    background-color: $keypad-bg-clr;
+
+    button {
+      box-shadow: 0 5px $key-shadow;
+    }
+    .number,
+    .operand {
+      color: $number-operand-clr;
+      background-color: $number-operand-bg-clr;
+    }
+
+    .delete-btn,
+    .equal-btn,
+    .reset-btn {
+      color: $action-btns;
+      // box-shadow: 0 5px black;
+    }
+    .delete-btn {
+      background-color: $delete-btn-bg-clr;
+      box-shadow: 0 5px $delete-btn-shadow;
+    }
+    .equal-btn {
+      color: black;
+      background-color: $equal-btn-bg-clr;
+      box-shadow: 0 5px $equal-btn-shadow;
+    }
+    .reset-btn {
+      background-color: $reset-btn-bg-clr;
+      box-shadow: 0 5px $reset-btn-shadow;
+    }
+  }
+}

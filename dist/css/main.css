@@ -1,0 +1,178 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  transition: 0.3s;
+  display: grid;
+  place-items: center;
+  font-family: "League Spartan", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+  max-width: 450px;
+  min-width: 330px;
+}
+main .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .header__logo {
+  font-size: 2.5rem;
+}
+main .header__theme-switcher {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+main .header__theme-switcher .theme-switcher__title {
+  font-weight: 700;
+}
+main .header__theme-switcher .theme-labels {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+main .header__theme-switcher .themes-input {
+  border-radius: 20px;
+  padding: 0.2em 0.3em;
+}
+main .header__theme-switcher .themes-input input {
+  transition: 0.5s;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  top: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+main .display {
+  text-align: right;
+  background-color: lightblue;
+  padding: 2em;
+  border-radius: 20px;
+  margin-top: 10px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .display__previous-result {
+  position: relative;
+  margin-top: 10px;
+}
+main .display__previous-result .previous-result__text {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+main .display .display__current-result {
+  min-height: 60px;
+}
+main .display .display__current-result .current-result__text {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+main .choices {
+  background-color: lightblue;
+  display: grid;
+  padding: 0.9em;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  font-weight: 700;
+  gap: 10px;
+  transform: translateY(0);
+}
+main .choices button {
+  padding: 0.2em 0.5em;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+  margin: 5px 0 0 0;
+}
+main .choices button:active {
+  transform: translateY(5px);
+}
+main .choices .reset-btn {
+  grid-column: 1/3;
+}
+main .choices .equal-btn {
+  grid-column: 3/5;
+}/*# sourceMappingURL=main.css.map */

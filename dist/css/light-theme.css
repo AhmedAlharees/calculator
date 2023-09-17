@@ -1,0 +1,48 @@
+/*
+This is the second theme of three themes
+preseneted in the challenge.I named it 
+the light theme
+*/
+/* variables */
+body {
+  background-color: hsl(0, 0%, 90%);
+}
+
+main .header {
+  color: hsl(60, 10%, 19%);
+}
+main .header .themes-input {
+  background-color: hsl(0, 5%, 81%);
+}
+main .header .themes-input .light-theme {
+  background-color: hsl(25, 98%, 40%);
+}
+main .display {
+  background-color: #fff;
+  color: hsl(60, 10%, 19%);
+}
+main .choices {
+  background-color: hsl(0, 5%, 81%);
+}
+main .choices button {
+  box-shadow: 0 5px hsl(28, 16%, 65%);
+}
+main .choices .number, main .choices .operand {
+  color: hsl(60, 10%, 19%);
+  background-color: hsl(30, 25%, 89%);
+}
+main .choices .delete-btn, main .choices .equal-btn, main .choices .reset-btn {
+  color: #fff;
+}
+main .choices .delete-btn {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 5px hsl(185, 58%, 25%);
+}
+main .choices .equal-btn {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0 5px hsl(25, 99%, 27%);
+}
+main .choices .reset-btn {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 5px hsl(185, 58%, 25%);
+}/*# sourceMappingURL=light-theme.css.map */
